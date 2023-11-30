@@ -36,7 +36,7 @@ H55_CompetitiveARMGTowns = 1; --Default ARMG maps have mage guild lvl 1 prebuilt
 
 H55_NoAutoTeamHumans = 0; --Set to 1 to prevent human players from teaming up automatically in Nightmare or Savage mode, AI players still team up.
 
-H55_AICheatMode = 2; --Makes AI get more or less creatures to make up for quick-combat losses the human player isn't making, Only accepts numbers 0,1,2,3,4,5,6; 
+H55_AICheatMode = 3; --Makes AI get more or less creatures to make up for quick-combat losses the human player isn't making, Only accepts numbers 0,1,2,3,4,5,6; 
 
 --	GUIDELINES for AICheatMode setting:
 --	0 = Cheating is ALWAYS off, lowers the default difficulties but casual game will still be easier because AI starting resources are lower.

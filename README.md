@@ -3,7 +3,7 @@
 
 ## Settings
 
-* Play with default Impossible AI but reduce AI compensation to 60%
+* Play with default Impossible AI but reduce AI compensation to 80%
 * Disable neutral growth coef
 
 ## Index
