@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MMH55> <!--WARNING! Do not modify this file inside the \data folder. The game can only read this file from this exact location OR one alternative location. 
+		This is a technical limitation. A duplicate overwriting file can be created in the UserMODs folder, the exact name of the archive must be MMH55-CustomStats.h5u 
+		Players in multiplayer must use the exact same MMH55Stats file to prevent desyncs! -->
+	<AbilitiesAtbReset enabled="true">
+		<Encourage>0.15</Encourage>
+		<Prayer>0.15</Prayer>
+		<BansheeHowl>0.15</BansheeHowl>
+		<Bannish>0.33</Bannish>
+		<AvatarOfeath>0.33</AvatarOfeath>
+		<RefreshRune>0.5</RefreshRune>
+		<RetaliationStrike>0.15</RetaliationStrike>
+		<DemonicStrike>0.3</DemonicStrike>
+		<SpiritLink>0.5</SpiritLink>
+		<MarkOfTheSorc>0.33</MarkOfTheSorc>
+		<ChainAttack>0.45</ChainAttack>
+		<MassSpellcast>0.33</MassSpellcast>
+		<MaxStartAtb>0.15</MaxStartAtb>
+		<WaitAction>0.5</WaitAction>
+		<SorceryAtbPerMastery>0.1111</SorceryAtbPerMastery>
+	</AbilitiesAtbReset>
+	<AvatarOfDeathNoMana enabled="true"/> <!-- Removes the mana loss condition when Avatar of death dies -->
+	<Avenger enabled="true">
+		<ArmyKnowYourEnemy>10</ArmyKnowYourEnemy>
+		<ArmyCriticalChance>70</ArmyCriticalChance>
+		<ArmyBonusDamage>0.5</ArmyBonusDamage> <!-- 0.9 means 90% bonus damage -->
+		<HeroCriticalChance>70</HeroCriticalChance>
+		<HeroBonusDamage>50</HeroBonusDamage>  <!-- 90 means 90% bonus damage -->
+	</Avenger>
+	<BattlefieldSize enabled="true">
+		<Width>14</Width>
+		<Height>12</Height>
+	</BattlefieldSize>
+	<CastersLuckDamage_base enabled="true">25</CastersLuckDamage_base> <!-- percentage value as integer. Caster's Luck damage formula is CastersLuckDamage_base + Hero_level -->
+	<CreatureArtifacts enabled="true">
+		<Attack>150</Attack>
+		<AttackMax>20</AttackMax>
+		<ShatterDefense>100</ShatterDefense>
+		<ShatterDefenseMax>10</ShatterDefenseMax>
+		<Health>134</Health>
+		<HealthMax>15</HealthMax>
+		<Defense>150</Defense>
+		<DefenseMax>20</DefenseMax>
+		<MagicProofMax>40</MagicProofMax>
+		<Luck>50</Luck>
+		<LuckMax>10</LuckMax>
+		<Morale>50</Morale>
+		<MoraleMax>10</MoraleMax>
+		<Speed>25</Speed>
+		<SpeedMax>5</SpeedMax>
+		<Initiative>500</Initiative>
+		<InitiativeMax>50</InitiativeMax>
+	</CreatureArtifacts>
+	<DisableMagicOpposites enabled="true"/> <!-- Disable dispel effect when casting a spell on top of an opposite one haste / slow; weakness / blodlust; Makes owner of eternal light perk has his bless spell effect immune to curse casts. -->
+	<DjinDarkLightAbility enabled="true"/> <!-- Changes the list of Dark spells cast by Random Darkand Random Dark& Light abilities
+												from Weakness, Suffering, Confusion, Slow, Plague, Vulnerability
+												  to Weakness, Suffering, Confusion, Slow. -->
+	<DwarfFormationsForAll enabled="true"/> <!-- Makes "Offensive & Defensive formation" skills applicable to units from all factions -->
+	<EarthquakeTremors enabled="true"/> <!-- Earthquake can be cast on non-siege maps; Tremors effect is part of the spell but works on all units -->
+	<EmpoweredArmageddonFix enabled="true"/> <!-- Empowered Armageddon Fix: Fire Perks do not work; Do not hit WarMachines(TOE); Do not deal bonus damage at center -->
+	<EnlightenmentForBarbsFix enabled="true"/>  <!-- Fix unlearning Barbarian Learning does not revoke primary skill bonuses -->
+	<EmpoweredSpellsDamage_base enabled="true">30</EmpoweredSpellsDamage_base>  <!-- Alters Empowered Spells perk damage bonus from 50% to Base + 1%*Hero_level -->
+	<ExtendedElementalArtifacts enabled="true"> <!-- change spell damage amplifier for original set; add additonal set with different modifier -->
+		<Set1Boost>1.2</Set1Boost>  <!-- for TITANS_TRIDENT, EVERCOLD_ICICLE, PHOENIX_FEATHER_CAPE, ARTIFACT_EARTHSLIDERS -->
+		<Set2Boost>1.3</Set2Boost>  <!-- for ARTIFACT ID: 192(air)/193(earth)/194(fire)/195(water) -->
+	</ExtendedElementalArtifacts> 
+	<ChainShotImmunityForCrystalScales enabled="true"/>
+	<ColdDeathImmunityForCrystalScalesAndMechanical enabled="true"/>
+	<ConsumeCorpseSqrtHp enabled="true"/> <!-- "Drain Soul" mana formula esitmates HP as SQRT(HP) -->
+	<CreatureStatsModifiers>
+		<ArtifactSets enabled="true">
+			<SarIsus2_bonusSpellpower>1.5</SarIsus2_bonusSpellpower>  <!-- spellpower multiplier as float. 1.5 means 50%; 2.0 means 100% -->
+			<SarIsus4_bonusSpellpower>2.0</SarIsus4_bonusSpellpower>
+		</ArtifactSets>
+		<Initiative enabled="true">
+			  <!-- (QAI only) March Of the Golems perk does not grant initiative bonus to Magnetic Golems
+			  - Leadership grants &UndeadLeadershipBonus initiative per mastery level to Undead creatures.
+              - Leadership spell effect is present over Undead creatures when Hero provides the ability -->
+			<UndeadLeadershipBonus>0.03</UndeadLeadershipBonus> <!-- 0.03 is 3% bonus per mastery level -->
+		</Initiative>
+		<Resistance enabled="true">
+			<Artifact173>8</Artifact173> 	<!--Sun Cross-->
+			<Artifact174>6</Artifact174> 	<!--Pendant of Interference-->
+			<ForgottenHeroPlate>8</ForgottenHeroPlate>
+			<InterferenceBoots>14</InterferenceBoots>
+			<PerkMagicResistance>12</PerkMagicResistance>
+		</Resistance>
+		<SpellsAndAbilities enabled="true">
+			<RegenerationPool>10</RegenerationPool> <!-- percentage value in integers 10 is 10% -->
+		</SpellsAndAbilities>
+	</CreatureStatsModifiers>
+	<DisableMagicResistForNonDamagingSpells enabled="true"/> <!-- NOTE: Vulnerability is excluded -->
+	<FlamingArrowsDamageAndDefense enabled="true"/> <!-- NOTE: damage = hero_level; target_defense=defense/2 -->
+	<ImbueBalistaATB enabled="true"/> <!-- Fixes Imbue balista exhausting Hero ATB bug -->
+	<Income enabled="true">
+		<Artifacts>
+			<KnowledgeBonus>
+				<CrownOfCourage>10</CrownOfCourage>
+				<ValoriousArmor>5</ValoriousArmor>
+			</KnowledgeBonus>
+			<GoldPerKnowledge>
+				<EndlessBagOfGold>25</EndlessBagOfGold>
+				<EndlessSackOfGold>50</EndlessSackOfGold>
+				<HornOfPlenty>75</HornOfPlenty>
+				<ArtifactGear08>200</ArtifactGear08>
+			</GoldPerKnowledge>
+		</Artifacts>
+		<Skills>
+			<EstatesBonusPerKnowledge>100</EstatesBonusPerKnowledge>
+		</Skills>
+	</Income>
+	<InstantTravelMovementRequirements enabled="true"/> <!-- Changes Instant Travel movement points requirements from 50% to 20% -->
+	<MassSpells enabled="true">
+		<MassCurse>1.0</MassCurse>
+		<MassBless>1.0</MassBless>
+		<MassSlow>0.75</MassSlow>
+		<MassHaste>0.75</MassHaste>
+		<MassBloodlust>0.75</MassBloodlust>
+		<MassWeakness>0.75</MassWeakness>
+		<MassStoneskin>0.75</MassStoneskin>
+		<MassDisruptingRay>0.75</MassDisruptingRay>
+		<MassDeflectArrows>0.75</MassDeflectArrows>
+		<MassForgetfullness>0.75</MassForgetfullness>
+		<MassCleansing>1.0</MassCleansing>
+	</MassSpells>
+	<MultiplayerCombatScripts enabled="true"/> <!-- Enables the usage of combat scripts in LAN and Hotseat games -->
+	<Pest enabled="true"/> <!-- Permanent Endless Simultaneous Turns -->
+	<ProtectorSpecialization enabled="true"/> <!-- Changes bonus HP from 1 per 5 to 1 per 10 hero levels -->
+	<SpellCost enabled="true"/> <!-- Mass spells (except dispel) mana cost from x2 to x4; Sar Isus artifact cost reduction from 50% to 25%  -->
+	<SpiritLink enabled="true">6</SpiritLink> <!-- Mana formula changed from DAMAGE/MANA_PER_HP to (SQRT(DAMAGE) + const)/MANA_PER_HP, where ccnst is the value specified -->
+	<HavenTraining enabled="true"/> <!-- Remove Training/Combat skill requirement to access the Training Grounds -->
+	<HellfireTriggerChance enabled="true">66</HellfireTriggerChance> <!-- percent value as integer -->
+	<CreatureAbilitiesChance enabled="true">40</CreatureAbilitiesChance> <!-- Changes trigger chance formula from 25% +/- 3% to CreatureAbilitiesChance% +/- 5% -->
+	<Modifiers>
+		<AbsoluteCharge enabled="true"/> <!-- Retalation strike bonus damage multiplier from 3 to 1.5 times -->
+		<BattleDiveDamage enabled="true">0.75</BattleDiveDamage> <!-- 0.75 means 75% bonus damage -->
+	    <ChillingBones enabled="true">0.1</ChillingBones> <!-- percentage value in decimals 0.1 = 10% -->
+	    <EnergyChannel enabled="true">0.05</EnergyChannel> <!-- percentage value in decimals 0.05 = 5% -->
+	    <Enlightenment enabled="true">7</Enlightenment> <!-- Level divisor for no mastery; divisor = (VALUE - enlightenment Level) -->
+	    <ErraticMana enabled="true">
+			<Chance>100</Chance>  <!-- percentage value as integer 10 is 10% -->
+			<Min>0.1</Min> <!-- min mana recovered, percentage value in decimals 0.1 is 10% -->
+			<Max>0.3</Max> <!-- max mana recovered, percentage value in decimals 0.2 is 20% -->
+	    </ErraticMana>
+	    <HeroAlignmentMoraleBonus enabled="true">0</HeroAlignmentMoraleBonus>
+	    <LastStandTrigger enabled="true">4</LastStandTrigger>
+	    <MatronSalvo enabled="true">30</MatronSalvo> <!-- Coven Mistress formula changed from (10+2*HeroLevel)% to (MatronSalvo_value+HeroLevel)%  -->
+	    <Movement enabled="true">
+			<PathfinderPenaltyReduction>1.0</PathfinderPenaltyReduction> <!-- percentage value in decimals 1.0 = 100% -->
+			<TrackerBonusPerLevel>0.01</TrackerBonusPerLevel> <!-- percentage value in decimals 0.01 = 1%; Speciality "Tracker" movement point penalty per level factor (0.01) 
+                 the formula for this is penalty = penalty * (1 - specialityTracker*(2*heroLevel-1))
+                 so at level 10 the actual penalty is 81 % of the real penalty
+                 using higher values than 0.02 might make the game crash because of the negative result at high hero levels. -->
+			<DiagonalMovementFactor>1.41</DiagonalMovementFactor> <!-- Diagonal cost movement multiplier -->
+			<LogisticsBonusPerMastery>0.05</LogisticsBonusPerMastery> <!-- percentage value in decimals 0.05 = 5% -->
+			<NavigationBonus>0.25</NavigationBonus> <!-- percentage value in decimals. Original value 0.5 = 50% -->
+			<BootsOfSpeedBonus>0.15</BootsOfSpeedBonus> <!-- percentage value in decimals 0.05 = 5% -->
+			<MoveCostHomeland>100</MoveCostHomeland> <!-- integer value; movement cost for home terrain; Original value 100 -->
+			<MoveCostRoad>75</MoveCostRoad> <!-- integer value; movement cost for home terrain; Original value 75 -->
+			<MoveCostSea>75</MoveCostSea> <!-- integer value; movement cost in sea; Original value 100 -->
+			<MoveCostStandard>100</MoveCostStandard> <!-- integer value; default movement cost; Original value 100 -->
+			<PenaltyDirtLavaTaigaSubterran>10</PenaltyDirtLavaTaigaSubterran> <!-- integer value; penalty added to movement cost; Original value 25 -->
+			<PenaltySandSnow>10</PenaltySandSnow> <!-- integer value; penalty added to movement cost; Original value 50 -->
+			<!-- Adds a Snatch perk adjustment - When hero flee or surrender he does not keep his current movement points value -->
+	    </Movement>
+		<OccultismPenetration enabled="true">
+			<Basic>30</Basic>
+			<Advanced>40</Advanced>
+			<Expert>50</Expert>
+			<Ultimate>50</Ultimate>
+		</OccultismPenetration>
+		<PowerOfStone enabled="true">SPELL_DEFLECT_ARROWS</PowerOfStone>
+		<ProtectionPerkProof enabled="true">0.2</ProtectionPerkProof> <!-- percentage value in decimals -->
+		<StaffOfTheNetherworld enabled="true">0.12</StaffOfTheNetherworld> <!-- percentage value in decimals -->
+		<StormWind enabled="true">2</StormWind> <!-- (QAI only) Initiative reduction by StormWind. ToE is 20% -->
+		<WhipStrike enabled="true">
+			<Spell1>SPELL_SLOW</Spell1>
+			<Spell2>SPELL_WEAKNESS</Spell2>
+			<Spell3>SPELL_CURSE</Spell3>
+		</WhipStrike>
+	</Modifiers>
+	<OneStackSplit enabled="true"/> <!-- // Stack splits distrubite 1 creature to the new stack instead of half of the original size -->
+	<PawStrikeDivisor enabled="true">5</PawStrikeDivisor>
+	<PyromancyBonus enabled="true"/> <!-- Removes the-40% pyromancy bonus -->
+	<QaiFixes>
+		<BattleFrenzyBoostFactor>1.5</BattleFrenzyBoostFactor>
+		<ChampionChargeMinimalDistance>2</ChampionChargeMinimalDistance>
+		<PackDive_DelayBeforAttack>1</PackDive_DelayBeforAttack>
+		<PackDive_DamageMultiplier>0.75</PackDive_DamageMultiplier>
+	</QaiFixes>
+	<RangedRetaliationStrike enabled="true"/> <!-- "Retaliation Sitrke" also works against ranged attacks -->
+	<RuneOfTheDragonForm enabled="true"/> <!-- Disables usage of Rune of Dragonform for Fire Dragon. -->
+	<SacrificialPitHealth enabled="true">10</SacrificialPitHealth>
+	<ShowPlayerTurnTimerInCombat enabled="true"/>
+	<SnareFix enabled="true"/> <!-- Fix: game crashing when Arcane Crystal or Blade Barrier are summoned on a tile with snare -->
+	<SpellShrineExperience enabled="true"/> <!-- Reduce spell shrines experience for barbarians from 1000*Spell_level to 500*Spell_level -->
+	<SwapBarbarianSpellbook enabled="true"/>
+	<TowerDamage enabled="true">
+		<FactorLinear>0.5</FactorLinear>
+		<FactorQuadratic>0.5</FactorQuadratic>
+		<MainTowerDamage>200</MainTowerDamage>
+		<SideTowerDamage>140</SideTowerDamage>
+	</TowerDamage>
+	<WandArtifact enabled="true">
+		<Item>
+			<ID>SPELL_WASP_SWARM</ID>
+			<Charge>6</Charge>
+		</Item>
+		<Item>
+			<ID>SPELL_FIREBALL</ID>
+			<Charge>3</Charge>
+		</Item>
+		<Item>
+			<ID>SPELL_ICE_BOLT</ID>
+			<Charge>3</Charge>
+		</Item>
+		<Item>
+			<ID>SPELL_FORGETFULNESS</ID>
+			<Charge>6</Charge>
+		</Item>
+		<Item>
+			<ID>SPELL_ARCANE_CRYSTAL</ID>
+			<Charge>5</Charge>
+		</Item>
+		<Item>
+			<ID>SPELL_TELEPORT</ID>
+			<Charge>3</Charge>
+		</Item>
+		<Item>
+			<ID>SPELL_DISPEL</ID>
+			<Charge>3</Charge>
+		</Item>
+		<Item>
+			<ID>SPELL_EARTHQUAKE</ID>
+			<Charge>5</Charge>
+		</Item>
+		<Item>
+			<ID>SPELL_DEFLECT_ARROWS</ID>
+			<Charge>6</Charge>
+		</Item>
+		<Item>
+			<ID>SPELL_SORROW</ID>
+			<Charge>5</Charge>
+		</Item>
+		<Item>
+			<ID>SPELL_MAGIC_ARROW</ID>
+			<Charge>5</Charge>
+		</Item>
+	</WandArtifact>
+	<WarMachines>
+		<Health enabled="true"/> <!--  Health formula changed from ( BASE_HP + WAR_MACHINE_MASTERY_LEVEL * MASTERY_BONUS ) * PERK_MULTIPLIER to ( BASE_HP + WAR_MACHINE_MASTERY_LEVEL * MASTERY_BONUS * HERO_LEVEL ) * PERK_MULTIPLIER -->
+		<Tent enabled="true"> <!-- besides the changes below also make Plague Tent to not spend shots and reduces Ring Of Machine Affinity heal modifier from 2.0 to 1.5 -->
+			<HealthSkill>HERO_SKILL_DEFENCE</HealthSkill>
+			<HealthBonus>
+				<None>20</None>
+				<Basic>30</Basic>
+				<Advanced>40</Advanced>
+				<Expert>60</Expert>
+			</HealthBonus>
+			<WarMachineSkillHealPerDefenseStat>
+				<None>4</None>
+				<Basic>4</Basic>
+				<Advanced>6</Advanced>
+				<Expert>8</Expert>
+			</WarMachineSkillHealPerDefenseStat>
+			<CleansingSkill>HERO_SKILL_LIGHT_MAGIC</CleansingSkill>
+			<CleansingMastery>
+                <None>MASTERY_NONE</None>
+                <Basic>MASTERY_BASIC</Basic>
+                <Advanced>MASTERY_ADVANCED</Advanced>
+                <Expert>MASTERY_EXPERT</Expert>
+			</CleansingMastery>
+		</Tent>
+		<Tier enabled="true">8</Tier> <!-- Change all War Machines tier from 3 to a value between 1 and 8 -->
+	</WarMachines>
+	<Weeks enabled="true">
+		<OfLowerDefense>0.1</OfLowerDefense> <!-- percent as decimal. 0.1 means 10% reduced defense -->
+		<OfLowerLuckAndMorale>1</OfLowerLuckAndMorale> <!-- integer, reduced morale -->
+		<OfElementalDamageDivisor>10</OfElementalDamageDivisor> <!-- integer divisor; spell damage = damage + damage/divisor -->
+		<OfLowerInitiative>0.05</OfLowerInitiative>   <!-- percent as decimal. 0.1 means 10% reduced initiative -->
+		<OfMightDivisor>10</OfMightDivisor> <!-- integer divisor; creature damage = damage + damage/divisor -->
+	</Weeks>
+</MMH55>

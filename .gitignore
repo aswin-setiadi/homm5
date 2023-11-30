@@ -1,0 +1,8 @@
+MMH55-Index-folder/*
+*.h5m
+*.zip
+!MMH55-Index-folder/GameMechanics/
+MMH55-Index-folder/GameMechanics/*
+!MMH55-Index-folder/GameMechanics/RPGStats/
+MMH55-Index-folder/GameMechanics/RPGStats/*
+!MMH55-Index-folder/GameMechanics/RPGStats/DefaultStats.xdb
