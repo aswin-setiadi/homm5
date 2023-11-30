@@ -23,7 +23,7 @@ H55_MineControl = 1; --Allows players to easily guard mines with self-sustaining
 H55_DimensionDoors = 1; --enables dimension door objects to visit towns remotely on ARMG maps (0 = deactvivated)
 H55_DimensionDoorsOnThisMap = 0; --DO NOT activate this here, copy/paste this variable on a personal map you want to have dimension doors instead of magi huts.
 
-H55_IgnoreExpAdjustment = 0; --If this is set to 1, the game will not adjust the experience gain to the size of the neutral stacks (so higher difficulty will not be as hard).
+H55_IgnoreExpAdjustment = 1; --If this is set to 1, the game will not adjust the experience gain to the size of the neutral stacks (so higher difficulty will not be as hard).
 
 H55_NoMentoring = 0; --If this is set to 1, Memory Mentoring is not allowed, all Memory Mentors on the adventure map will offer a choice between +2 Spellpower or Knowledge.
 H55_NoHillFortsOnARMG = 0; --If this is set to 1, Hill Fort functionality is not allowed on ARMG maps, all Hill Forts on the adventure map will offer a choice between +1 Attack or Defense.
@@ -36,7 +36,7 @@ H55_CompetitiveARMGTowns = 1; --Default ARMG maps have mage guild lvl 1 prebuilt
 
 H55_NoAutoTeamHumans = 0; --Set to 1 to prevent human players from teaming up automatically in Nightmare or Savage mode, AI players still team up.
 
-H55_AICheatMode = 4; --Makes AI get more or less creatures to make up for quick-combat losses the human player isn't making, Only accepts numbers 0,1,2,3,4,5,6; 
+H55_AICheatMode = 2; --Makes AI get more or less creatures to make up for quick-combat losses the human player isn't making, Only accepts numbers 0,1,2,3,4,5,6; 
 
 --	GUIDELINES for AICheatMode setting:
 --	0 = Cheating is ALWAYS off, lowers the default difficulties but casual game will still be easier because AI starting resources are lower.
