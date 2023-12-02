@@ -56,11 +56,11 @@
 		<skills>
 			<Item>
 				<Mastery>MASTERY_BASIC</Mastery>
-				<SkillID>HERO_SKILL_SORCERY</SkillID>
+				<SkillID>HERO_SKILL_NECROMANCY</SkillID>
 			</Item>
 		</skills>
 		<perkIDs>
-			<Item>HERO_SKILL_DARK_RITUAL</Item>
+			<Item>HERO_SKILL_DEATH_SCREAM</Item>
 		</perkIDs>
 		<spellIDs>
 			<Item>SPELL_ANIMATE_DEAD</Item>
